@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Услуги — Декор-КС</title>
+  <meta name="description" content="Полный цикл услуг: замер, 3D-проект, производство, доставка, монтаж и шеф-монтаж архитектурного декора. От идеи до реализации.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">DK</span>
+        <span>Декор-КС<span class="logo__sub">архитектурный декор</span></span>
+      </a>
+      <nav class="nav">
+        <div class="nav__item">
+          <a href="catalog.html" class="nav__link">Каталог <span class="nav__arrow">&#9662;</span></a>
+          <div class="dropdown dropdown--mega">
+            <a href="catalog.html" class="dropdown__item"><span class="dropdown__icon">&#9634;</span><span class="dropdown__text"><strong>Карнизы</strong><span>Венчающие, межэтажные, цокольные</span></span></a>
+            <a href="catalog.html" class="dropdown__item"><span class="dropdown__icon">&#9673;</span><span class="dropdown__text"><strong>Колонны</strong><span>Круглые, квадратные, пилястры</span></span></a>
+            <a href="catalog.html" class="dropdown__item"><span class="dropdown__icon">&#9711;</span><span class="dropdown__text"><strong>Обрамления окон</strong><span>Наличники, сандрики, подоконники</span></span></a>
+            <a href="catalog.html" class="dropdown__item"><span class="dropdown__icon">&#9670;</span><span class="dropdown__text"><strong>Русты и боссажи</strong><span>Угловые элементы, панели</span></span></a>
+            <a href="catalog.html" class="dropdown__item"><span class="dropdown__icon">&#10022;</span><span class="dropdown__text"><strong>Декоративные элементы</strong><span>Розетки, картуши, замковые камни</span></span></a>
+            <a href="catalog.html" class="dropdown__item"><span class="dropdown__icon">&#9651;</span><span class="dropdown__text"><strong>Балюстрады</strong><span>Балясины, перила, ограждения</span></span></a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <a href="services.html" class="nav__link nav__link--active">Услуги <span class="nav__arrow">&#9662;</span></a>
+          <div class="dropdown">
+            <a href="#service-zamer" class="dropdown__item"><span class="dropdown__icon">&#128207;</span><span class="dropdown__text"><strong>Замер</strong><span>Выезд специалиста</span></span></a>
+            <a href="#service-3d" class="dropdown__item"><span class="dropdown__icon">&#128187;</span><span class="dropdown__text"><strong>3D-проект</strong><span>Визуализация фасада</span></span></a>
+            <a href="#service-production" class="dropdown__item"><span class="dropdown__icon">&#9874;</span><span class="dropdown__text"><strong>Производство</strong><span>Изготовление на заказ</span></span></a>
+            <a href="#service-delivery" class="dropdown__item"><span class="dropdown__icon">&#128666;</span><span class="dropdown__text"><strong>Доставка</strong><span>По всей России</span></span></a>
+            <a href="#service-montazh" class="dropdown__item"><span class="dropdown__icon">&#128295;</span><span class="dropdown__text"><strong>Монтаж</strong><span>Профессиональная установка</span></span></a>
+            <a href="#service-shef" class="dropdown__item"><span class="dropdown__icon">&#128101;</span><span class="dropdown__text"><strong>Шеф-монтаж</strong><span>Контроль и обучение</span></span></a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav__link">Блог</a>
+        <a href="#" class="nav__link">О компании</a>
+        <a href="#" class="nav__link">Контакты</a>
+      </nav>
+      <div class="header__actions">
+        <a href="tel:+78001234567" class="header__phone">8 800 123-45-67</a>
+        <a href="#" class="header__cart" aria-label="Корзина">&#128722;<span class="header__cart-count">3</span></a>
+        <a href="#" class="btn btn--primary btn--sm">Заказать звонок</a>
+        <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Главная</a>
+        <span class="breadcrumbs__sep">/</span>
+        <span class="breadcrumbs__current">Услуги</span>
+      </div>
+      <h1>Услуги Декор-КС</h1>
+      <p>Полный цикл: от первого замера до финального монтажа. Каждый этап — под контролем наших специалистов.</p>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES OVERVIEW (6 big cards) ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">6 этапов</span>
+        <h2>Как мы работаем</h2>
+        <p>От обращения до установки декора — прозрачный процесс с понятными сроками</p>
+      </div>
+
+      <!-- Service 1: Замер -->
+      <div class="service-block" id="service-zamer">
+        <div class="service-block__header">
+          <div class="service-block__icon">&#128207;</div>
+          <div class="service-block__content">
+            <div class="flex gap-sm mb-1">
+              <span class="badge badge--accent">Этап 1</span>
+              <span class="badge badge--success">Бесплатно от 50 000 &#8381;</span>
+            </div>
+            <h3>Замер объекта</h3>
+            <p>
+              Выезд нашего специалиста для точного обмера фасада вашего дома. Замерщик фиксирует все размеры,
+              фотографирует фасад со всех сторон, выявляет особенности конструкции. По результатам вы получаете
+              обмерный чертёж с привязкой всех декоративных элементов.
+            </p>
+          </div>
+        </div>
+        <div class="service-block__steps">
+          <div class="step">
+            <span class="step__num">1</span>
+            <span class="step__text">Заявка на замер через сайт или по телефону</span>
+          </div>
+          <div class="step">
+            <span class="step__num">2</span>
+            <span class="step__text">Согласование даты и времени выезда</span>
+          </div>
+          <div class="step">
+            <span class="step__num">3</span>
+            <span class="step__text">Выезд замерщика на объект (1-2 часа)</span>
+          </div>
+          <div class="step">
+            <span class="step__num">4</span>
+            <span class="step__text">Обмерный чертёж и фотоотчёт за 1-2 дня</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2: 3D-проект -->
+      <div class="service-block" id="service-3d">
+        <div class="service-block__header">
+          <div class="service-block__icon">&#128187;</div>
+          <div class="service-block__content">
+            <div class="flex gap-sm mb-1">
+              <span class="badge badge--accent">Этап 2</span>
+              <span class="badge badge--outline">от 15 000 &#8381;</span>
+            </div>
+            <h3>3D-проект фасада</h3>
+            <p>
+              Создаём фотореалистичную визуализацию вашего фасада с выбранными декоративными элементами.
+              Вы увидите, как будет выглядеть готовый дом ещё до начала производства. Предлагаем 2-3 варианта
+              стилистического решения. Бесплатно при заказе декора от 100 000 руб.
+            </p>
+          </div>
+        </div>
+        <div class="service-block__steps">
+          <div class="step">
+            <span class="step__num">1</span>
+            <span class="step__text">Получаем обмерный чертёж и ваши пожелания по стилю</span>
+          </div>
+          <div class="step">
+            <span class="step__num">2</span>
+            <span class="step__text">Разрабатываем 2-3 варианта 3D-визуализации</span>
+          </div>
+          <div class="step">
+            <span class="step__num">3</span>
+            <span class="step__text">Презентация и обсуждение вариантов онлайн</span>
+          </div>
+          <div class="step">
+            <span class="step__num">4</span>
+            <span class="step__text">Финальная доработка и спецификация элементов</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3: Производство -->
+      <div class="service-block" id="service-production">
+        <div class="service-block__header">
+          <div class="service-block__icon">&#9874;</div>
+          <div class="service-block__content">
+            <div class="flex gap-sm mb-1">
+              <span class="badge badge--accent">Этап 3</span>
+              <span class="badge badge--outline">от 3 дней</span>
+            </div>
+            <h3>Производство декора</h3>
+            <p>
+              Изготавливаем декор на собственном заводе в Краснодаре. Три линии производства:
+              архимрамор (полимербетон), архикамень (фибробетон) и пенополистирол с армирующим покрытием.
+              Стандартные изделия — от 3 рабочих дней. Нестандартные по вашим чертежам — от 7 дней.
+              Контроль качества на каждом этапе.
+            </p>
+          </div>
+        </div>
+        <div class="service-block__steps">
+          <div class="step">
+            <span class="step__num">1</span>
+            <span class="step__text">Согласование спецификации и предоплата 50%</span>
+          </div>
+          <div class="step">
+            <span class="step__num">2</span>
+            <span class="step__text">Изготовление изделий на заводе</span>
+          </div>
+          <div class="step">
+            <span class="step__num">3</span>
+            <span class="step__text">Контроль качества: проверка размеров, геометрии, поверхности</span>
+          </div>
+          <div class="step">
+            <span class="step__num">4</span>
+            <span class="step__text">Фотоотчёт и уведомление о готовности</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 4: Доставка -->
+      <div class="service-block" id="service-delivery">
+        <div class="service-block__header">
+          <div class="service-block__icon">&#128666;</div>
+          <div class="service-block__content">
+            <div class="flex gap-sm mb-1">
+              <span class="badge badge--accent">Этап 4</span>
+              <span class="badge badge--outline">72 региона</span>
+            </div>
+            <h3>Доставка по России</h3>
+            <p>
+              Доставляем декор по всей России: собственным транспортом по Краснодарскому краю и Ростовской области,
+              транспортными компаниями (ПЭК, Деловые Линии, СДЭК) — в остальные регионы.
+              Специальная упаковка каждого элемента в пенопласт и стрейч — бесплатно.
+              Страхование груза включено.
+            </p>
+          </div>
+        </div>
+        <div class="service-block__steps">
+          <div class="step">
+            <span class="step__num">1</span>
+            <span class="step__text">Упаковка каждого элемента в индивидуальную тару</span>
+          </div>
+          <div class="step">
+            <span class="step__num">2</span>
+            <span class="step__text">Формирование палет и загрузка на транспорт</span>
+          </div>
+          <div class="step">
+            <span class="step__num">3</span>
+            <span class="step__text">Отслеживание груза в личном кабинете</span>
+          </div>
+          <div class="step">
+            <span class="step__num">4</span>
+            <span class="step__text">Приёмка на объекте с проверкой комплектации</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 5: Монтаж -->
+      <div class="service-block" id="service-montazh">
+        <div class="service-block__header">
+          <div class="service-block__icon">&#128295;</div>
+          <div class="service-block__content">
+            <div class="flex gap-sm mb-1">
+              <span class="badge badge--accent">Этап 5</span>
+              <span class="badge badge--success">Гарантия 5 лет</span>
+            </div>
+            <h3>Профессиональный монтаж</h3>
+            <p>
+              Наши сертифицированные бригады устанавливают декор на вашем объекте.
+              Работаем по всей центральной России и в Краснодарском крае.
+              Используем только сертифицированные клеевые составы и крепёж.
+              Гарантия на монтажные работы — 5 лет. Средний срок монтажа коттеджа — 5-10 рабочих дней.
+            </p>
+          </div>
+        </div>
+        <div class="service-block__steps">
+          <div class="step">
+            <span class="step__num">1</span>
+            <span class="step__text">Согласование графика и подготовка фасада</span>
+          </div>
+          <div class="step">
+            <span class="step__num">2</span>
+            <span class="step__text">Разметка и установка крепёжных элементов</span>
+          </div>
+          <div class="step">
+            <span class="step__num">3</span>
+            <span class="step__text">Монтаж декора, герметизация стыков</span>
+          </div>
+          <div class="step">
+            <span class="step__num">4</span>
+            <span class="step__text">Приёмка работ, подписание акта и гарантийного талона</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 6: Шеф-монтаж -->
+      <div class="service-block" id="service-shef">
+        <div class="service-block__header">
+          <div class="service-block__icon">&#128101;</div>
+          <div class="service-block__content">
+            <div class="flex gap-sm mb-1">
+              <span class="badge badge--accent">Этап 6</span>
+              <span class="badge badge--outline">Альтернатива</span>
+            </div>
+            <h3>Шеф-монтаж</h3>
+            <p>
+              Если у вас есть собственная бригада — наш технолог приедет на объект, обучит вашу команду,
+              проконтролирует первый день монтажа и будет на связи на протяжении всего процесса.
+              Шеф-монтаж стоит значительно дешевле полного монтажа и даёт уверенность в правильной установке.
+            </p>
+          </div>
+        </div>
+        <div class="service-block__steps">
+          <div class="step">
+            <span class="step__num">1</span>
+            <span class="step__text">Выезд технолога на объект (1-2 дня)</span>
+          </div>
+          <div class="step">
+            <span class="step__num">2</span>
+            <span class="step__text">Обучение вашей бригады технологии монтажа</span>
+          </div>
+          <div class="step">
+            <span class="step__num">3</span>
+            <span class="step__text">Контроль установки первых элементов</span>
+          </div>
+          <div class="step">
+            <span class="step__num">4</span>
+            <span class="step__text">Удалённые консультации до завершения работ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING OVERVIEW ========== -->
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Стоимость</span>
+        <h2>Стоимость услуг</h2>
+        <p>Прозрачное ценообразование без скрытых платежей</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="service-card" style="text-align:center;">
+          <div class="service-card__icon" style="margin:0 auto 20px;">&#128207;</div>
+          <h4>Замер</h4>
+          <div style="font-family:var(--font-heading); font-size:2rem; font-weight:700; color:var(--accent); margin:12px 0;">Бесплатно</div>
+          <p class="text-muted" style="font-size:.85rem;">При заказе от 50 000 &#8381;<br>Иначе — 3 000 &#8381;</p>
+        </div>
+        <div class="service-card" style="text-align:center;">
+          <div class="service-card__icon" style="margin:0 auto 20px;">&#128187;</div>
+          <h4>3D-проект</h4>
+          <div style="font-family:var(--font-heading); font-size:2rem; font-weight:700; color:var(--accent); margin:12px 0;">от 15 000 &#8381;</div>
+          <p class="text-muted" style="font-size:.85rem;">Бесплатно при заказе<br>от 100 000 &#8381;</p>
+        </div>
+        <div class="service-card" style="text-align:center;">
+          <div class="service-card__icon" style="margin:0 auto 20px;">&#128295;</div>
+          <h4>Монтаж</h4>
+          <div style="font-family:var(--font-heading); font-size:2rem; font-weight:700; color:var(--accent); margin:12px 0;">от 800 &#8381;/п.м.</div>
+          <p class="text-muted" style="font-size:.85rem;">Зависит от сложности<br>и высоты фасада</p>
+        </div>
+      </div>
+
+      <div class="grid-3 mt-2">
+        <div class="service-card" style="text-align:center;">
+          <div class="service-card__icon" style="margin:0 auto 20px;">&#9874;</div>
+          <h4>Производство</h4>
+          <div style="font-family:var(--font-heading); font-size:2rem; font-weight:700; color:var(--accent); margin:12px 0;">по каталогу</div>
+          <p class="text-muted" style="font-size:.85rem;">Цены на сайте актуальны<br>Нестандарт — по запросу</p>
+        </div>
+        <div class="service-card" style="text-align:center;">
+          <div class="service-card__icon" style="margin:0 auto 20px;">&#128666;</div>
+          <h4>Доставка</h4>
+          <div style="font-family:var(--font-heading); font-size:2rem; font-weight:700; color:var(--accent); margin:12px 0;">от 0 &#8381;</div>
+          <p class="text-muted" style="font-size:.85rem;">Бесплатно по Краснодару<br>Регионы — по тарифу ТК</p>
+        </div>
+        <div class="service-card" style="text-align:center;">
+          <div class="service-card__icon" style="margin:0 auto 20px;">&#128101;</div>
+          <h4>Шеф-монтаж</h4>
+          <div style="font-family:var(--font-heading); font-size:2rem; font-weight:700; color:var(--accent); margin:12px 0;">от 25 000 &#8381;</div>
+          <p class="text-muted" style="font-size:.85rem;">1-2 дня на объекте<br>+ удалённая поддержка</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA FORM ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-form">
+        <h3>Оставить заявку на услугу</h3>
+        <p>Заполните форму и мы свяжемся с вами в течение 30 минут в рабочее время</p>
+
+        <div class="form-group">
+          <label class="form-label">Интересующая услуга</label>
+          <select class="form-input form-select">
+            <option>Замер объекта</option>
+            <option>3D-проект фасада</option>
+            <option>Производство на заказ</option>
+            <option>Доставка</option>
+            <option>Монтаж</option>
+            <option>Шеф-монтаж</option>
+            <option>Комплексное решение (всё включено)</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Ваше имя</label>
+            <input type="text" class="form-input" placeholder="Как к вам обращаться">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Телефон</label>
+            <input type="tel" class="form-input" placeholder="+7 (___) ___-__-__">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" placeholder="email@example.com">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Описание объекта или задачи</label>
+          <textarea class="form-input form-textarea" placeholder="Расскажите о вашем проекте: тип объекта, площадь фасада, желаемые элементы декора..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-checkbox">
+            <input type="checkbox" checked>
+            Я согласен на обработку персональных данных в соответствии с
+            <a href="#" style="color:var(--accent); text-decoration:underline;">политикой конфиденциальности</a>
+          </label>
+        </div>
+
+        <button class="btn btn--primary btn--lg btn--block">Отправить заявку</button>
+
+        <p class="text-muted text-center mt-1" style="font-size:.82rem;">
+          Или позвоните нам: <a href="tel:+78001234567" style="color:var(--accent); font-weight:600;">8 800 123-45-67</a> (бесплатно)
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="section section--surface">
+    <div class="container container--narrow">
+      <div class="section__header">
+        <span class="section__label">FAQ</span>
+        <h2>Частые вопросы</h2>
+      </div>
+
+      <div class="service-block" style="padding:24px 32px; margin-bottom:16px;">
+        <h4 style="margin-bottom:8px;">Работаете ли вы в моём регионе?</h4>
+        <p class="text-muted" style="font-size:.9rem;">
+          Производство и доставка — по всей России (72 региона). Монтаж — Краснодарский край, Ростовская область,
+          Москва и Подмосковье, Санкт-Петербург. Шеф-монтаж — по всей России.
+        </p>
+      </div>
+
+      <div class="service-block" style="padding:24px 32px; margin-bottom:16px;">
+        <h4 style="margin-bottom:8px;">Какие сроки производства?</h4>
+        <p class="text-muted" style="font-size:.9rem;">
+          Стандартные изделия из каталога — от 3 рабочих дней. Нестандартные по вашим чертежам — от 7 рабочих дней.
+          Крупные заказы (от 200 п.м.) — обсуждаем индивидуальный график.
+        </p>
+      </div>
+
+      <div class="service-block" style="padding:24px 32px; margin-bottom:16px;">
+        <h4 style="margin-bottom:8px;">Даёте ли вы гарантию?</h4>
+        <p class="text-muted" style="font-size:.9rem;">
+          Гарантия на изделия — 10 лет. Гарантия на монтажные работы — 5 лет. Все гарантийные обязательства
+          оформляются в договоре и гарантийном талоне.
+        </p>
+      </div>
+
+      <div class="service-block" style="padding:24px 32px; margin-bottom:16px;">
+        <h4 style="margin-bottom:8px;">Можно ли заказать нестандартные элементы?</h4>
+        <p class="text-muted" style="font-size:.9rem;">
+          Да, мы производим декор по индивидуальным чертежам. Пришлите эскиз или DWG-файл — мы рассчитаем стоимость
+          и сроки в течение 1 рабочего дня.
+        </p>
+      </div>
+
+      <div class="service-block" style="padding:24px 32px; margin-bottom:0;">
+        <h4 style="margin-bottom:8px;">Какие способы оплаты?</h4>
+        <p class="text-muted" style="font-size:.9rem;">
+          Для физических лиц: банковская карта, наличные, перевод по реквизитам. Для юридических лиц: безналичный
+          расчёт с НДС и без НДС. Стандартная схема: 50% предоплата, 50% перед отгрузкой.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="logo">
+            <span class="logo__icon">DK</span>
+            <span>Декор-КС<span class="logo__sub">архитектурный декор</span></span>
+          </a>
+          <p>Производство и продажа архитектурного декора для фасадов и интерьеров. Работаем по всей России с 2012 года.</p>
+        </div>
+        <div>
+          <div class="footer__title">Каталог</div>
+          <ul class="footer__links">
+            <li><a href="catalog.html">Карнизы</a></li>
+            <li><a href="catalog.html">Колонны</a></li>
+            <li><a href="catalog.html">Обрамления окон</a></li>
+            <li><a href="catalog.html">Русты и боссажи</a></li>
+            <li><a href="catalog.html">Балюстрады</a></li>
+            <li><a href="catalog.html">Декоративные элементы</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__title">Компания</div>
+          <ul class="footer__links">
+            <li><a href="#">О нас</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Дилерам</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__title">Контакты</div>
+          <ul class="footer__contacts">
+            <li><span>&#128222;</span> <span><a href="tel:+78001234567">8 800 123-45-67</a><br><small>Бесплатно по России</small></span></li>
+            <li><span>&#128231;</span> <span><a href="mailto:info@dekor-ks.ru">info@dekor-ks.ru</a></span></li>
+            <li><span>&#128205;</span> <span>г. Краснодар, ул. Промышленная, 15</span></li>
+            <li><span>&#128336;</span> <span>Пн-Пт: 9:00 &mdash; 18:00<br>Сб: 10:00 &mdash; 15:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2012&ndash;2026 Декор-КС. Все права защищены.</span>
+        <div class="footer__bottom-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Пользовательское соглашение</a>
+          <a href="#">Карта сайта</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== COOKIE BANNER ========== -->
+  <div class="cookie-banner">
+    <div class="cookie-banner__text">
+      Мы используем файлы cookie для улучшения работы сайта. Продолжая использовать сайт, вы соглашаетесь с нашей
+      <a href="#">политикой конфиденциальности</a>.
+    </div>
+    <div class="cookie-banner__actions">
+      <button class="btn btn--primary btn--sm">Принять</button>
+      <button class="btn btn--ghost btn--sm">Настроить</button>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог — Декор-КС</title>
+  <meta name="description" content="Статьи о фасадном декоре: выбор материалов, монтаж, тренды, советы архитекторов. Полезная информация от экспертов Декор-КС.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">DK</span>
+        <span>Декор-КС<span class="logo__sub">архитектурный декор</span></span>
+      </a>
+      <nav class="nav">
+        <div class="nav__item">
+          <a href="catalog.html" class="nav__link">Каталог <span class="nav__arrow">&#9662;</span></a>
+          <div class="dropdown dropdown--mega">
+            <a href="catalog.html" class="dropdown__item"><span class="dropdown__icon">&#9634;</span><span class="dropdown__text"><strong>Карнизы</strong><span>Венчающие, межэтажные, цокольные</span></span></a>
+            <a href="catalog.html" class="dropdown__item"><span class="dropdown__icon">&#9673;</span><span class="dropdown__text"><strong>Колонны</strong><span>Круглые, квадратные, пилястры</span></span></a>
+            <a href="catalog.html" class="dropdown__item"><span class="dropdown__icon">&#9711;</span><span class="dropdown__text"><strong>Обрамления окон</strong><span>Наличники, сандрики, подоконники</span></span></a>
+            <a href="catalog.html" class="dropdown__item"><span class="dropdown__icon">&#9670;</span><span class="dropdown__text"><strong>Русты и боссажи</strong><span>Угловые элементы, панели</span></span></a>
+            <a href="catalog.html" class="dropdown__item"><span class="dropdown__icon">&#10022;</span><span class="dropdown__text"><strong>Декоративные элементы</strong><span>Розетки, картуши, замковые камни</span></span></a>
+            <a href="catalog.html" class="dropdown__item"><span class="dropdown__icon">&#9651;</span><span class="dropdown__text"><strong>Балюстрады</strong><span>Балясины, перила, ограждения</span></span></a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <a href="services.html" class="nav__link">Услуги <span class="nav__arrow">&#9662;</span></a>
+          <div class="dropdown">
+            <a href="services.html" class="dropdown__item"><span class="dropdown__icon">&#128207;</span><span class="dropdown__text"><strong>Замер</strong><span>Выезд специалиста</span></span></a>
+            <a href="services.html" class="dropdown__item"><span class="dropdown__icon">&#128187;</span><span class="dropdown__text"><strong>3D-проект</strong><span>Визуализация фасада</span></span></a>
+            <a href="services.html" class="dropdown__item"><span class="dropdown__icon">&#9874;</span><span class="dropdown__text"><strong>Производство</strong><span>Изготовление на заказ</span></span></a>
+            <a href="services.html" class="dropdown__item"><span class="dropdown__icon">&#128666;</span><span class="dropdown__text"><strong>Доставка</strong><span>По всей России</span></span></a>
+            <a href="services.html" class="dropdown__item"><span class="dropdown__icon">&#128295;</span><span class="dropdown__text"><strong>Монтаж</strong><span>Профессиональная установка</span></span></a>
+            <a href="services.html" class="dropdown__item"><span class="dropdown__icon">&#128101;</span><span class="dropdown__text"><strong>Шеф-монтаж</strong><span>Контроль и обучение</span></span></a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav__link nav__link--active">Блог</a>
+        <a href="#" class="nav__link">О компании</a>
+        <a href="#" class="nav__link">Контакты</a>
+      </nav>
+      <div class="header__actions">
+        <a href="tel:+78001234567" class="header__phone">8 800 123-45-67</a>
+        <a href="#" class="header__cart" aria-label="Корзина">&#128722;<span class="header__cart-count">3</span></a>
+        <a href="#" class="btn btn--primary btn--sm">Заказать звонок</a>
+        <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Главная</a>
+        <span class="breadcrumbs__sep">/</span>
+        <span class="breadcrumbs__current">Блог</span>
+      </div>
+      <h1>Блог Декор-КС</h1>
+      <p>Статьи о фасадном декоре, советы по выбору материалов, инструкции по монтажу и обзоры трендов</p>
+    </div>
+  </section>
+
+  <!-- ========== BLOG ========== -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Featured Article -->
+      <div class="blog-featured">
+        <div class="blog-featured__image">[ Фото: большое сравнение материалов ]</div>
+        <div class="blog-featured__body">
+          <div class="flex gap-sm mb-1">
+            <span class="badge badge--accent">Советы</span>
+            <span class="badge badge--outline">Рекомендуем</span>
+          </div>
+          <h2><a href="#">Архимрамор vs пенополистирол: полное сравнение для вашего фасада</a></h2>
+          <div class="blog-card__meta mb-1">
+            <span>12 апреля 2026</span>
+            <span>&bull;</span>
+            <span>8 мин чтения</span>
+          </div>
+          <p class="blog-featured__excerpt">
+            Подробный разбор двух самых популярных материалов для фасадного декора по 7 ключевым параметрам:
+            вес, прочность, цена, долговечность, лёгкость монтажа, внешний вид и экологичность.
+            Поможем определиться с выбором под вашу задачу и бюджет.
+          </p>
+          <a href="#" class="btn btn--primary">Читать статью &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="category-tabs">
+        <button class="category-tab category-tab--active">Все статьи</button>
+        <button class="category-tab">Советы</button>
+        <button class="category-tab">Монтаж</button>
+        <button class="category-tab">Тренды</button>
+        <button class="category-tab">Материалы</button>
+        <button class="category-tab">Проекты</button>
+        <button class="category-tab">Новости</button>
+      </div>
+
+      <!-- Blog Layout: Grid + Sidebar -->
+      <div class="blog-layout">
+
+        <!-- Articles Grid -->
+        <div>
+          <div class="blog-grid">
+            <!-- Article 1 -->
+            <div class="blog-card hover-lift">
+              <div class="blog-card__image">
+                <span class="blog-card__category badge badge--accent">Монтаж</span>
+                [ Фото: монтаж карниза ]
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span>8 апреля 2026</span>
+                  <span>&bull;</span>
+                  <span>12 мин</span>
+                </div>
+                <div class="blog-card__title"><a href="#">Монтаж карниза: пошаговая инструкция с фото</a></div>
+                <p class="blog-card__excerpt">Подробное руководство по установке венчающего карниза на утеплённый фасад. 15 шагов от разметки до герметизации.</p>
+              </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="blog-card hover-lift">
+              <div class="blog-card__image">
+                <span class="blog-card__category badge badge--accent">Тренды</span>
+                [ Фото: современный фасад ]
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span>3 апреля 2026</span>
+                  <span>&bull;</span>
+                  <span>6 мин</span>
+                </div>
+                <div class="blog-card__title"><a href="#">Тренды фасадного декора 2026: минимализм встречает классику</a></div>
+                <p class="blog-card__excerpt">Обзор главных тенденций в оформлении фасадов: лаконичные профили, скрытые карнизы, микс стилей.</p>
+              </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="blog-card hover-lift">
+              <div class="blog-card__image">
+                <span class="blog-card__category badge badge--accent">Материалы</span>
+                [ Фото: образцы материалов ]
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span>28 марта 2026</span>
+                  <span>&bull;</span>
+                  <span>10 мин</span>
+                </div>
+                <div class="blog-card__title"><a href="#">Что такое архикамень и чем он отличается от натурального камня</a></div>
+                <p class="blog-card__excerpt">Технология производства, состав, характеристики и преимущества архикамня перед природным известняком и травертином.</p>
+              </div>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="blog-card hover-lift">
+              <div class="blog-card__image">
+                <span class="blog-card__category badge badge--accent">Проекты</span>
+                [ Фото: фасад коттеджа ]
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span>22 марта 2026</span>
+                  <span>&bull;</span>
+                  <span>5 мин</span>
+                </div>
+                <div class="blog-card__title"><a href="#">Кейс: оформление фасада коттеджа 450 м&sup2; в стиле неоклассика</a></div>
+                <p class="blog-card__excerpt">От эскиза до монтажа за 6 недель. Рассказываем, как мы реализовали комплексный проект для загородного дома.</p>
+              </div>
+            </div>
+
+            <!-- Article 5 -->
+            <div class="blog-card hover-lift">
+              <div class="blog-card__image">
+                <span class="blog-card__category badge badge--accent">Советы</span>
+                [ Фото: покраска декора ]
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span>15 марта 2026</span>
+                  <span>&bull;</span>
+                  <span>7 мин</span>
+                </div>
+                <div class="blog-card__title"><a href="#">Как и чем красить фасадный декор: выбор краски и технология</a></div>
+                <p class="blog-card__excerpt">Гид по фасадным краскам для разных материалов. Акриловые, силиконовые, силикатные — плюсы, минусы, бренды.</p>
+              </div>
+            </div>
+
+            <!-- Article 6 -->
+            <div class="blog-card hover-lift">
+              <div class="blog-card__image">
+                <span class="blog-card__category badge badge--accent">Монтаж</span>
+                [ Фото: монтаж колонн ]
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span>10 марта 2026</span>
+                  <span>&bull;</span>
+                  <span>15 мин</span>
+                </div>
+                <div class="blog-card__title"><a href="#">Установка колонн на фасад: инженерные решения и крепёж</a></div>
+                <p class="blog-card__excerpt">Виды крепежа, расчёт нагрузки, подготовка основания. Практический опыт наших монтажных бригад.</p>
+              </div>
+            </div>
+
+            <!-- Article 7 -->
+            <div class="blog-card hover-lift">
+              <div class="blog-card__image">
+                <span class="blog-card__category badge badge--accent">Новости</span>
+                [ Фото: выставка ]
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span>5 марта 2026</span>
+                  <span>&bull;</span>
+                  <span>3 мин</span>
+                </div>
+                <div class="blog-card__title"><a href="#">Декор-КС на выставке «МосБилд 2026»: итоги и новинки</a></div>
+                <p class="blog-card__excerpt">Представили 12 новых изделий, подписали 8 дилерских контрактов. Фотоотчёт и впечатления.</p>
+              </div>
+            </div>
+
+            <!-- Article 8 -->
+            <div class="blog-card hover-lift">
+              <div class="blog-card__image">
+                <span class="blog-card__category badge badge--accent">Советы</span>
+                [ Фото: калькулятор ]
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span>28 февраля 2026</span>
+                  <span>&bull;</span>
+                  <span>9 мин</span>
+                </div>
+                <div class="blog-card__title"><a href="#">Как рассчитать стоимость декора фасада: формулы и примеры</a></div>
+                <p class="blog-card__excerpt">Пошаговый расчёт для типового коттеджа. Считаем погонные метры, количество элементов и итоговый бюджет.</p>
+              </div>
+            </div>
+
+            <!-- Article 9 -->
+            <div class="blog-card hover-lift">
+              <div class="blog-card__image">
+                <span class="blog-card__category badge badge--accent">Материалы</span>
+                [ Фото: тест морозостойкости ]
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__meta">
+                  <span>20 февраля 2026</span>
+                  <span>&bull;</span>
+                  <span>8 мин</span>
+                </div>
+                <div class="blog-card__title"><a href="#">Морозостойкость фасадного декора: реальные испытания и результаты</a></div>
+                <p class="blog-card__excerpt">Результаты лабораторных тестов наших изделий: 150-200 циклов заморозки. Что это значит на практике.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <a class="pagination__item pagination__item--disabled">&laquo;</a>
+            <a class="pagination__item pagination__item--active">1</a>
+            <a class="pagination__item">2</a>
+            <a class="pagination__item">3</a>
+            <a class="pagination__item">4</a>
+            <a class="pagination__item">&raquo;</a>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+
+          <!-- Search -->
+          <div class="sidebar-widget">
+            <div class="sidebar-widget__title">Поиск</div>
+            <div class="sidebar-search">
+              <input type="text" placeholder="Искать в блоге...">
+              <button>&#128269;</button>
+            </div>
+          </div>
+
+          <!-- Popular -->
+          <div class="sidebar-widget">
+            <div class="sidebar-widget__title">Популярное</div>
+            <div class="sidebar-popular-item">
+              <span class="sidebar-popular-item__num">1</span>
+              <div>
+                <div class="sidebar-popular-item__title"><a href="#">Архимрамор vs пенополистирол: полное сравнение</a></div>
+                <div class="sidebar-popular-item__date">12 апреля 2026</div>
+              </div>
+            </div>
+            <div class="sidebar-popular-item">
+              <span class="sidebar-popular-item__num">2</span>
+              <div>
+                <div class="sidebar-popular-item__title"><a href="#">Монтаж карниза: пошаговая инструкция</a></div>
+                <div class="sidebar-popular-item__date">8 апреля 2026</div>
+              </div>
+            </div>
+            <div class="sidebar-popular-item">
+              <span class="sidebar-popular-item__num">3</span>
+              <div>
+                <div class="sidebar-popular-item__title"><a href="#">Как рассчитать стоимость декора фасада</a></div>
+                <div class="sidebar-popular-item__date">28 февраля 2026</div>
+              </div>
+            </div>
+            <div class="sidebar-popular-item">
+              <span class="sidebar-popular-item__num">4</span>
+              <div>
+                <div class="sidebar-popular-item__title"><a href="#">Что такое архикамень и его преимущества</a></div>
+                <div class="sidebar-popular-item__date">28 марта 2026</div>
+              </div>
+            </div>
+            <div class="sidebar-popular-item">
+              <span class="sidebar-popular-item__num">5</span>
+              <div>
+                <div class="sidebar-popular-item__title"><a href="#">Установка колонн: инженерные решения</a></div>
+                <div class="sidebar-popular-item__date">10 марта 2026</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categories -->
+          <div class="sidebar-widget">
+            <div class="sidebar-widget__title">Рубрики</div>
+            <div class="sidebar-category-item">
+              <a href="#">Советы</a>
+              <span class="sidebar-category-item__count">14</span>
+            </div>
+            <div class="sidebar-category-item">
+              <a href="#">Монтаж</a>
+              <span class="sidebar-category-item__count">11</span>
+            </div>
+            <div class="sidebar-category-item">
+              <a href="#">Материалы</a>
+              <span class="sidebar-category-item__count">9</span>
+            </div>
+            <div class="sidebar-category-item">
+              <a href="#">Тренды</a>
+              <span class="sidebar-category-item__count">7</span>
+            </div>
+            <div class="sidebar-category-item">
+              <a href="#">Проекты</a>
+              <span class="sidebar-category-item__count">12</span>
+            </div>
+            <div class="sidebar-category-item">
+              <a href="#">Новости</a>
+              <span class="sidebar-category-item__count">6</span>
+            </div>
+          </div>
+
+          <!-- Tags Cloud -->
+          <div class="sidebar-widget">
+            <div class="sidebar-widget__title">Теги</div>
+            <div class="tags-cloud">
+              <a href="#" class="tag">фасад</a>
+              <a href="#" class="tag">карнизы</a>
+              <a href="#" class="tag">монтаж</a>
+              <a href="#" class="tag">архимрамор</a>
+              <a href="#" class="tag">пенополистирол</a>
+              <a href="#" class="tag">колонны</a>
+              <a href="#" class="tag">покраска</a>
+              <a href="#" class="tag">утепление</a>
+              <a href="#" class="tag">классика</a>
+              <a href="#" class="tag">модерн</a>
+              <a href="#" class="tag">коттедж</a>
+              <a href="#" class="tag">проект</a>
+              <a href="#" class="tag">расчёт</a>
+              <a href="#" class="tag">DWG</a>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+
+      <!-- ========== COMMENTS PREVIEW ========== -->
+      <div class="comments-section mt-3">
+        <h3 class="mb-2">Комментарии к статье</h3>
+        <p class="text-muted mb-2">Пример секции комментариев (для статьи &laquo;Архимрамор vs пенополистирол&raquo;)</p>
+
+        <div class="comment">
+          <div class="comment__avatar">ДВ</div>
+          <div>
+            <div class="comment__name">Дмитрий Волков</div>
+            <div class="comment__date">13 апреля 2026, 10:24</div>
+            <div class="comment__text">
+              Отличная статья! Долго выбирал между архимрамором и пенополистиролом для своего дома.
+              В итоге взял архимрамор на первый этаж (цоколь и обрамления окон) и пенополистирол на второй.
+              Уже год стоит — доволен обоими вариантами.
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <div class="comment__avatar">ЕС</div>
+          <div>
+            <div class="comment__name">Елена Смирнова</div>
+            <div class="comment__date">13 апреля 2026, 14:08</div>
+            <div class="comment__text">
+              Подскажите, а архикамень подойдёт для регионов с сильными морозами? У нас в Сибири зимой бывает -40.
+              Насколько он устойчив к таким перепадам?
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <div class="comment__avatar">DK</div>
+          <div>
+            <div class="comment__name">Декор-КС <span class="badge badge--accent" style="font-size:.65rem; vertical-align:middle;">Автор</span></div>
+            <div class="comment__date">13 апреля 2026, 15:30</div>
+            <div class="comment__text">
+              Елена, да, архикамень отлично подходит для Сибири. Морозостойкость F200 — это 200 циклов заморозки/разморозки.
+              У нас есть объекты в Красноярске и Новосибирске, которые стоят уже 5+ лет без нареканий.
+              Напишите нам на info@dekor-ks.ru — подберём оптимальное решение для вашего проекта.
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <div class="comment__avatar">АП</div>
+          <div>
+            <div class="comment__name">Андрей Попов</div>
+            <div class="comment__date">14 апреля 2026, 09:15</div>
+            <div class="comment__text">
+              Было бы полезно добавить в сравнение ещё и стеклофибробетон (СФБ).
+              В некоторых проектах он даёт интересные результаты по соотношению вес/прочность.
+            </div>
+          </div>
+        </div>
+
+        <!-- Comment form placeholder -->
+        <div class="cta-form mt-3" style="max-width:100%;">
+          <h3>Оставить комментарий</h3>
+          <p>Поделитесь своим опытом или задайте вопрос</p>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Имя</label>
+              <input type="text" class="form-input" placeholder="Ваше имя">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-input" placeholder="email@example.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Комментарий</label>
+            <textarea class="form-input form-textarea" placeholder="Ваш комментарий..."></textarea>
+          </div>
+          <button class="btn btn--primary">Отправить комментарий</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="logo">
+            <span class="logo__icon">DK</span>
+            <span>Декор-КС<span class="logo__sub">архитектурный декор</span></span>
+          </a>
+          <p>Производство и продажа архитектурного декора для фасадов и интерьеров. Работаем по всей России с 2012 года.</p>
+        </div>
+        <div>
+          <div class="footer__title">Каталог</div>
+          <ul class="footer__links">
+            <li><a href="catalog.html">Карнизы</a></li>
+            <li><a href="catalog.html">Колонны</a></li>
+            <li><a href="catalog.html">Обрамления окон</a></li>
+            <li><a href="catalog.html">Русты и боссажи</a></li>
+            <li><a href="catalog.html">Балюстрады</a></li>
+            <li><a href="catalog.html">Декоративные элементы</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__title">Компания</div>
+          <ul class="footer__links">
+            <li><a href="#">О нас</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Дилерам</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__title">Контакты</div>
+          <ul class="footer__contacts">
+            <li><span>&#128222;</span> <span><a href="tel:+78001234567">8 800 123-45-67</a><br><small>Бесплатно по России</small></span></li>
+            <li><span>&#128231;</span> <span><a href="mailto:info@dekor-ks.ru">info@dekor-ks.ru</a></span></li>
+            <li><span>&#128205;</span> <span>г. Краснодар, ул. Промышленная, 15</span></li>
+            <li><span>&#128336;</span> <span>Пн-Пт: 9:00 &mdash; 18:00<br>Сб: 10:00 &mdash; 15:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2012&ndash;2026 Декор-КС. Все права защищены.</span>
+        <div class="footer__bottom-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Пользовательское соглашение</a>
+          <a href="#">Карта сайта</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== COOKIE BANNER ========== -->
+  <div class="cookie-banner">
+    <div class="cookie-banner__text">
+      Мы используем файлы cookie для улучшения работы сайта. Продолжая использовать сайт, вы соглашаетесь с нашей
+      <a href="#">политикой конфиденциальности</a>.
+    </div>
+    <div class="cookie-banner__actions">
+      <button class="btn btn--primary btn--sm">Принять</button>
+      <button class="btn btn--ghost btn--sm">Настроить</button>
+    </div>
+  </div>
+
+</body>
+</html>
