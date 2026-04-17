@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог продукции — Классический стиль</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="header__inner">
+        <a href="index.html" class="header__logo">
+            <div class="header__logo-icon">КС</div>
+            <div class="header__logo-text">Классический стиль<span>Архитектурный декор</span></div>
+        </a>
+        <nav class="header__nav">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html" class="active">Каталог</a>
+            <a href="design.html">3D-проект</a>
+            <a href="blog.html">Блог</a>
+            <a href="#">Наши работы</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <div class="header__actions">
+            <div class="header__phone">8 (800) 555-98-35<span>Бесплатно по РФ</span></div>
+            <a href="#" class="btn btn--primary btn--sm">Заказать звонок</a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+    <div class="container">
+        <h1>Каталог продукции</h1>
+        <p>Более 300 элементов фасадного декора из архимрамора, архикамня и пенополистирола</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="breadcrumbs">
+        <a href="index.html">Главная</a><span>/</span>Каталог
+    </div>
+</div>
+
+<!-- CATEGORIES -->
+<section class="section" style="padding-top:20px">
+    <div class="container">
+        <div class="section-header" style="margin-bottom:40px">
+            <div class="section-header__label">Категории</div>
+            <h2>Выберите тип декора</h2>
+        </div>
+        <div class="grid grid--4">
+            <a href="#karnizy" class="product-card" style="text-align:center">
+                <div class="product-card__image" style="height:180px;font-size:3rem">&#9583;</div>
+                <div class="product-card__body">
+                    <h3>Карнизы</h3>
+                    <p>42 изделия</p>
+                </div>
+            </a>
+            <a href="#nalichniki" class="product-card" style="text-align:center">
+                <div class="product-card__image" style="height:180px;font-size:3rem">&#9633;</div>
+                <div class="product-card__body">
+                    <h3>Наличники</h3>
+                    <p>38 изделий</p>
+                </div>
+            </a>
+            <a href="#kolonny" class="product-card" style="text-align:center">
+                <div class="product-card__image" style="height:180px;font-size:3rem">&#9608;</div>
+                <div class="product-card__body">
+                    <h3>Колонны</h3>
+                    <p>24 изделия</p>
+                </div>
+            </a>
+            <a href="#balyustrady" class="product-card" style="text-align:center">
+                <div class="product-card__image" style="height:180px;font-size:3rem">&#9776;</div>
+                <div class="product-card__body">
+                    <h3>Балюстрады</h3>
+                    <p>18 изделий</p>
+                </div>
+            </a>
+            <a href="#zamki" class="product-card" style="text-align:center">
+                <div class="product-card__image" style="height:180px;font-size:3rem">&#9670;</div>
+                <div class="product-card__body">
+                    <h3>Замковые камни</h3>
+                    <p>16 изделий</p>
+                </div>
+            </a>
+            <a href="#rust" class="product-card" style="text-align:center">
+                <div class="product-card__image" style="height:180px;font-size:3rem">&#9638;</div>
+                <div class="product-card__body">
+                    <h3>Русты</h3>
+                    <p>12 изделий</p>
+                </div>
+            </a>
+            <a href="#pilastry" class="product-card" style="text-align:center">
+                <div class="product-card__image" style="height:180px;font-size:3rem">&#9615;</div>
+                <div class="product-card__body">
+                    <h3>Пилястры</h3>
+                    <p>14 изделий</p>
+                </div>
+            </a>
+            <a href="#tsokol" class="product-card" style="text-align:center">
+                <div class="product-card__image" style="height:180px;font-size:3rem">&#9604;</div>
+                <div class="product-card__body">
+                    <h3>Цокольные элементы</h3>
+                    <p>20 изделий</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTS LIST -->
+<section class="section section--light" id="karnizy">
+    <div class="container">
+        <div class="section-header" style="text-align:left;max-width:none;display:flex;justify-content:space-between;align-items:center">
+            <div>
+                <div class="section-header__label">Категория</div>
+                <h2>Карнизы</h2>
+            </div>
+            <div class="catalog-filters">
+                <button class="filter-btn active">Все</button>
+                <button class="filter-btn">Венчающие</button>
+                <button class="filter-btn">Межэтажные</button>
+                <button class="filter-btn">Цокольные</button>
+                <button class="filter-btn">Архимрамор</button>
+                <button class="filter-btn">Пенополистирол</button>
+            </div>
+        </div>
+        <div class="grid grid--4" style="margin-top:20px">
+            <a href="#" class="product-card">
+                <div class="product-card__image">КР-001</div>
+                <div class="product-card__body">
+                    <h3>Карниз КР-001</h3>
+                    <p>Венчающий, архимрамор, 150x120 мм</p>
+                    <div class="product-card__price">890 <span>руб./п.м.</span></div>
+                </div>
+            </a>
+            <a href="#" class="product-card">
+                <div class="product-card__image">КР-002</div>
+                <div class="product-card__body">
+                    <h3>Карниз КР-002</h3>
+                    <p>Венчающий, архимрамор, 200x150 мм</p>
+                    <div class="product-card__price">1 250 <span>руб./п.м.</span></div>
+                </div>
+            </a>
+            <a href="#" class="product-card">
+                <div class="product-card__image">КР-003</div>
+                <div class="product-card__body">
+                    <h3>Карниз КР-003</h3>
+                    <p>Межэтажный, пенополистирол, 100x80 мм</p>
+                    <div class="product-card__price">540 <span>руб./п.м.</span></div>
+                </div>
+            </a>
+            <a href="#" class="product-card">
+                <div class="product-card__image">КР-004</div>
+                <div class="product-card__body">
+                    <h3>Карниз КР-004</h3>
+                    <p>Цокольный, архимрамор, 180x100 мм</p>
+                    <div class="product-card__price">1 100 <span>руб./п.м.</span></div>
+                </div>
+            </a>
+            <a href="#" class="product-card">
+                <div class="product-card__image">КР-005</div>
+                <div class="product-card__body">
+                    <h3>Карниз КР-005</h3>
+                    <p>Венчающий с модильонами, 250x200 мм</p>
+                    <div class="product-card__price">2 400 <span>руб./п.м.</span></div>
+                </div>
+            </a>
+            <a href="#" class="product-card">
+                <div class="product-card__image">КР-006</div>
+                <div class="product-card__body">
+                    <h3>Карниз КР-006</h3>
+                    <p>Межэтажный, архикамень, 120x90 мм</p>
+                    <div class="product-card__price">780 <span>руб./п.м.</span></div>
+                </div>
+            </a>
+            <a href="#" class="product-card">
+                <div class="product-card__image">КР-007</div>
+                <div class="product-card__body">
+                    <h3>Карниз КР-007</h3>
+                    <p>Венчающий профилированный, 300x180 мм</p>
+                    <div class="product-card__price">3 100 <span>руб./п.м.</span></div>
+                </div>
+            </a>
+            <a href="#" class="product-card">
+                <div class="product-card__image">КР-008</div>
+                <div class="product-card__body">
+                    <h3>Карниз КР-008</h3>
+                    <p>Цокольный гладкий, пенополистирол, 80x60 мм</p>
+                    <div class="product-card__price">420 <span>руб./п.м.</span></div>
+                </div>
+            </a>
+        </div>
+        <div style="text-align:center;margin-top:48px">
+            <a href="#" class="btn btn--outline">Показать ещё</a>
+        </div>
+    </div>
+</section>
+
+<!-- MATERIALS INFO -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-header__label">Материалы</div>
+            <h2>Из чего производим</h2>
+        </div>
+        <div class="grid grid--3">
+            <div class="testimonial-card" style="text-align:center">
+                <h3 style="margin-bottom:12px">Архимрамор</h3>
+                <p style="font-size:0.9rem">Полимербетон на основе мраморной крошки. Прочность, морозостойкость, срок службы 50+ лет. Не отличить от натурального камня.</p>
+                <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--border)">
+                    <span style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--accent)">50+</span>
+                    <span style="font-size:0.8rem;color:var(--muted)"> лет службы</span>
+                </div>
+            </div>
+            <div class="testimonial-card" style="text-align:center">
+                <h3 style="margin-bottom:12px">Архикамень</h3>
+                <p style="font-size:0.9rem">Стеклофибробетон (СФБ). Лёгкий, прочный, идеален для крупных элементов. Выдерживает 300+ циклов заморозки.</p>
+                <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--border)">
+                    <span style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--accent)">300+</span>
+                    <span style="font-size:0.8rem;color:var(--muted)"> циклов заморозки</span>
+                </div>
+            </div>
+            <div class="testimonial-card" style="text-align:center">
+                <h3 style="margin-bottom:12px">Пенополистирол</h3>
+                <p style="font-size:0.9rem">Лёгкий и доступный. С армирующим покрытием не уступает камню визуально. Оптимален для бюджетных проектов.</p>
+                <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--border)">
+                    <span style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--accent)">x3</span>
+                    <span style="font-size:0.8rem;color:var(--muted)"> дешевле камня</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container">
+        <h2>Не нашли нужный элемент?</h2>
+        <p>Мы изготовим любой декор по вашим чертежам или эскизам</p>
+        <div class="cta__form">
+            <input type="text" placeholder="Ваш телефон">
+            <a href="#" class="btn btn--primary">Заказать расчёт</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <a href="index.html" class="header__logo" style="margin-bottom:16px">
+                    <div class="header__logo-icon">КС</div>
+                    <div class="header__logo-text" style="color:#fff">Классический стиль<span style="color:rgba(255,255,255,0.4)">Архитектурный декор</span></div>
+                </a>
+                <p>Производство и монтаж архитектурного декора для фасада дома. Работаем с 2010 года.</p>
+            </div>
+            <div>
+                <h4>Продукция</h4>
+                <ul class="footer__links">
+                    <li><a href="#karnizy">Карнизы</a></li>
+                    <li><a href="#nalichniki">Наличники</a></li>
+                    <li><a href="#kolonny">Колонны</a></li>
+                    <li><a href="#balyustrady">Балюстрады</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Компания</h4>
+                <ul class="footer__links">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Наши работы</a></li>
+                    <li><a href="design.html">3D-проект</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <div class="footer__contact-item"><div><strong>8 (800) 555-98-35</strong>Бесплатно по РФ</div></div>
+                <div class="footer__contact-item"><div><strong>info@dekor-ks.ru</strong>Напишите нам</div></div>
+                <div class="footer__contact-item"><div><strong>г. Ульяновск</strong>ул. Рылеева, д. 21 (4 этаж)</div></div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>&copy; 2010&ndash;2026 ООО &laquo;Классический стиль&raquo;</span>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

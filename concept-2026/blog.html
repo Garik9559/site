@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог — Классический стиль</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="header__inner">
+        <a href="index.html" class="header__logo">
+            <div class="header__logo-icon">КС</div>
+            <div class="header__logo-text">Классический стиль<span>Архитектурный декор</span></div>
+        </a>
+        <nav class="header__nav">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="design.html">3D-проект</a>
+            <a href="blog.html" class="active">Блог</a>
+            <a href="#">Наши работы</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <div class="header__actions">
+            <div class="header__phone">8 (800) 555-98-35<span>Бесплатно по РФ</span></div>
+            <a href="#" class="btn btn--primary btn--sm">Заказать звонок</a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+    <div class="container">
+        <h1>Блог</h1>
+        <p>Статьи о фасадном декоре, дизайне домов, материалах и технологиях монтажа</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="breadcrumbs">
+        <a href="index.html">Главная</a><span>/</span>Блог
+    </div>
+</div>
+
+<!-- FEATURED POST -->
+<section class="section" style="padding-top:20px;padding-bottom:60px">
+    <div class="container">
+        <div class="grid grid--2" style="gap:48px;align-items:center">
+            <div style="height:400px;background:var(--light);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--muted)">
+                Фото статьи
+            </div>
+            <div>
+                <div class="blog-card__tag">Популярное</div>
+                <h2 style="margin-bottom:16px">10 элементов декора, которые сделают ваш дом уникальным</h2>
+                <p style="margin-bottom:8px;color:var(--muted);font-size:0.85rem">12 марта 2026 &middot; 8 мин чтения</p>
+                <p style="margin-bottom:24px">Разбираем самые популярные элементы фасадного декора: от карнизов до балюстрад. Какие подходят для разных стилей и бюджетов, и как их сочетать.</p>
+                <a href="#" class="btn btn--dark">Читать статью</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section section--light" style="padding-top:40px">
+    <div class="container">
+        <div class="catalog-filters" style="justify-content:center;margin-bottom:48px">
+            <button class="filter-btn active">Все статьи</button>
+            <button class="filter-btn">Фасадный декор</button>
+            <button class="filter-btn">Дизайн фасада</button>
+            <button class="filter-btn">О фасадных работах</button>
+            <button class="filter-btn">Облицовочные решения</button>
+            <button class="filter-btn">Новости компании</button>
+        </div>
+
+        <div class="grid grid--3">
+            <a href="#" class="blog-card">
+                <div class="blog-card__image">Фото</div>
+                <div class="blog-card__body">
+                    <div class="blog-card__tag">Фасадный декор</div>
+                    <h3>Архимрамор и пенопласт: сравнение технологий</h3>
+                    <div class="blog-card__meta">
+                        <span>5 марта 2026</span>
+                        <span>6 мин</span>
+                    </div>
+                    <p>Подробное сравнение двух популярных материалов для фасадного декора по прочности, цене и внешнему виду</p>
+                </div>
+            </a>
+            <a href="#" class="blog-card">
+                <div class="blog-card__image">Фото</div>
+                <div class="blog-card__body">
+                    <div class="blog-card__tag">Дизайн фасада</div>
+                    <h3>Дома в классическом стиле: полный гид</h3>
+                    <div class="blog-card__meta">
+                        <span>28 февраля 2026</span>
+                        <span>10 мин</span>
+                    </div>
+                    <p>Как создать фасад в классическом стиле: пропорции, элементы декора, цветовые решения</p>
+                </div>
+            </a>
+            <a href="#" class="blog-card">
+                <div class="blog-card__image">Фото</div>
+                <div class="blog-card__body">
+                    <div class="blog-card__tag">О фасадных работах</div>
+                    <h3>Как выбрать монтажную бригаду</h3>
+                    <div class="blog-card__meta">
+                        <span>20 февраля 2026</span>
+                        <span>5 мин</span>
+                    </div>
+                    <p>Чек-лист для выбора подрядчика: на что обращать внимание при найме монтажников</p>
+                </div>
+            </a>
+            <a href="#" class="blog-card">
+                <div class="blog-card__image">Фото</div>
+                <div class="blog-card__body">
+                    <div class="blog-card__tag">Облицовочные решения</div>
+                    <h3>Термопанели: краткий обзор рынка</h3>
+                    <div class="blog-card__meta">
+                        <span>15 февраля 2026</span>
+                        <span>7 мин</span>
+                    </div>
+                    <p>Сравниваем основных производителей термопанелей: клинкерные, под кирпич, под камень</p>
+                </div>
+            </a>
+            <a href="#" class="blog-card">
+                <div class="blog-card__image">Фото</div>
+                <div class="blog-card__body">
+                    <div class="blog-card__tag">Фасадный декор</div>
+                    <h3>Сочетания цветов крыши и фасада</h3>
+                    <div class="blog-card__meta">
+                        <span>10 февраля 2026</span>
+                        <span>4 мин</span>
+                    </div>
+                    <p>Проверенные цветовые сочетания для фасада и кровли. Таблица совместимости оттенков</p>
+                </div>
+            </a>
+            <a href="#" class="blog-card">
+                <div class="blog-card__image">Фото</div>
+                <div class="blog-card__body">
+                    <div class="blog-card__tag">Дизайн фасада</div>
+                    <h3>Дома в итальянском стиле</h3>
+                    <div class="blog-card__meta">
+                        <span>5 февраля 2026</span>
+                        <span>8 мин</span>
+                    </div>
+                    <p>Особенности итальянской архитектуры: арки, колонны, тёплые тона, террасы и внутренние дворики</p>
+                </div>
+            </a>
+            <a href="#" class="blog-card">
+                <div class="blog-card__image">Фото</div>
+                <div class="blog-card__body">
+                    <div class="blog-card__tag">О фасадных работах</div>
+                    <h3>Инструкции по монтажу декора</h3>
+                    <div class="blog-card__meta">
+                        <span>1 февраля 2026</span>
+                        <span>12 мин</span>
+                    </div>
+                    <p>Пошаговые инструкции для монтажа карнизов, наличников, колонн. С фото и видео</p>
+                </div>
+            </a>
+            <a href="#" class="blog-card">
+                <div class="blog-card__image">Фото</div>
+                <div class="blog-card__body">
+                    <div class="blog-card__tag">Фасадный декор</div>
+                    <h3>Виды фасадного декора: полный обзор</h3>
+                    <div class="blog-card__meta">
+                        <span>25 января 2026</span>
+                        <span>9 мин</span>
+                    </div>
+                    <p>Карнизы, молдинги, наличники, замковые камни, русты — для чего нужен каждый элемент</p>
+                </div>
+            </a>
+            <a href="#" class="blog-card">
+                <div class="blog-card__image">Фото</div>
+                <div class="blog-card__body">
+                    <div class="blog-card__tag">Новости компании</div>
+                    <h3>Доставка фасадного декора по России</h3>
+                    <div class="blog-card__meta">
+                        <span>20 января 2026</span>
+                        <span>3 мин</span>
+                    </div>
+                    <p>Как мы упаковываем и доставляем хрупкие элементы декора. Гарантия сохранности</p>
+                </div>
+            </a>
+        </div>
+
+        <div style="text-align:center;margin-top:48px;padding-bottom:20px">
+            <a href="#" class="btn btn--outline">Загрузить ещё</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container">
+        <h2>Подпишитесь на новые статьи</h2>
+        <p>Полезные материалы о дизайне фасада и архитектурном декоре</p>
+        <div class="cta__form">
+            <input type="email" placeholder="Ваш email">
+            <a href="#" class="btn btn--primary">Подписаться</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <a href="index.html" class="header__logo" style="margin-bottom:16px">
+                    <div class="header__logo-icon">КС</div>
+                    <div class="header__logo-text" style="color:#fff">Классический стиль<span style="color:rgba(255,255,255,0.4)">Архитектурный декор</span></div>
+                </a>
+                <p>Производство и монтаж архитектурного декора для фасада дома. Работаем с 2010 года.</p>
+            </div>
+            <div>
+                <h4>Продукция</h4>
+                <ul class="footer__links">
+                    <li><a href="catalog.html">Карнизы</a></li>
+                    <li><a href="catalog.html">Наличники</a></li>
+                    <li><a href="catalog.html">Колонны</a></li>
+                    <li><a href="catalog.html">Балюстрады</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Компания</h4>
+                <ul class="footer__links">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Наши работы</a></li>
+                    <li><a href="design.html">3D-проект</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <div class="footer__contact-item"><div><strong>8 (800) 555-98-35</strong>Бесплатно по РФ</div></div>
+                <div class="footer__contact-item"><div><strong>info@dekor-ks.ru</strong>Напишите нам</div></div>
+                <div class="footer__contact-item"><div><strong>г. Ульяновск</strong>ул. Рылеева, д. 21 (4 этаж)</div></div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>&copy; 2010&ndash;2026 ООО &laquo;Классический стиль&raquo;</span>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
