@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Декор-КС — Архитектурный декор для фасада</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <!-- Top Row: Logo + Search + Phone + Cart -->
+    <div class="header-top">
+      <div class="container">
+        <!-- Mobile hamburger -->
+        <button class="mobile-toggle" aria-label="Меню">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+
+        <a href="index.html" class="header-logo">
+          <div class="header-logo__icon">D</div>
+          <div class="header-logo__text">
+            Декор-КС
+            <small>Архитектурный декор</small>
+          </div>
+        </a>
+
+        <div class="header-search">
+          <input type="text" class="header-search__input" placeholder="Поиск по каталогу: карнизы, молдинги, колонны...">
+          <button class="header-search__btn" aria-label="Найти">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </button>
+        </div>
+
+        <div class="header-phone">
+          <a href="tel:88005559835" class="header-phone__number">8 (800) 555-98-35</a>
+          <span class="header-phone__label">Звонок бесплатный</span>
+        </div>
+
+        <div class="header-actions">
+          <a href="#" class="header-action-btn" aria-label="Избранное">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </a>
+          <a href="#" class="header-action-btn" aria-label="Корзина">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <span class="cart-badge">3</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Row: Каталог + Nav Links -->
+    <nav class="header-nav">
+      <div class="container">
+        <button class="catalog-btn" id="catalogBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          Каталог
+        </button>
+        <div class="nav-links">
+          <a href="index.html" class="active">Главная</a>
+          <a href="catalog.html">Карнизы</a>
+          <a href="#">Молдинги</a>
+          <a href="#">Колонны</a>
+          <a href="#">Услуги</a>
+          <a href="#">Проекты</a>
+          <a href="blog.html">Блог</a>
+          <a href="#">Дилерам</a>
+          <a href="#">Контакты</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mega-menu -->
+    <div class="mega-menu" id="megaMenu">
+      <div class="mega-menu__inner">
+        <div class="mega-menu__title">Все категории</div>
+        <div class="mega-menu__grid">
+          <a href="catalog.html" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9645;</span>
+            <span class="mega-menu__item-text">Карнизы</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9644;</span>
+            <span class="mega-menu__item-text">Молдинги</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9643;</span>
+            <span class="mega-menu__item-text">Наличники</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9638;</span>
+            <span class="mega-menu__item-text">Подоконники</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9673;</span>
+            <span class="mega-menu__item-text">Колонны</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9681;</span>
+            <span class="mega-menu__item-text">Полуколонны</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9650;</span>
+            <span class="mega-menu__item-text">Пилястры</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9651;</span>
+            <span class="mega-menu__item-text">Капители</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9670;</span>
+            <span class="mega-menu__item-text">Замковые камни</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9635;</span>
+            <span class="mega-menu__item-text">Русты</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9679;</span>
+            <span class="mega-menu__item-text">Розетки</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9733;</span>
+            <span class="mega-menu__item-text">Декоративные элементы</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9671;</span>
+            <span class="mega-menu__item-text">Балюстрады</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9634;</span>
+            <span class="mega-menu__item-text">Парапеты</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9632;</span>
+            <span class="mega-menu__item-text">Цокольные профили</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9674;</span>
+            <span class="mega-menu__item-text">Арочные элементы</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9675;</span>
+            <span class="mega-menu__item-text">Медальоны</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9678;</span>
+            <span class="mega-menu__item-text">Кронштейны</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9646;</span>
+            <span class="mega-menu__item-text">Угловые элементы</span>
+          </a>
+          <a href="#" class="mega-menu__item">
+            <span class="mega-menu__item-icon">&#9642;</span>
+            <span class="mega-menu__item-text">Монтажные системы</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="mega-overlay" id="megaOverlay"></div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">Архитектурный декор для фасада</h1>
+          <p class="hero__subtitle">Более 2 000 элементов фасадного декора из архимрамора, архикамня и пенополистирола. Производство, доставка, монтаж по всей России.</p>
+          <div class="hero__actions">
+            <a href="catalog.html" class="btn btn--primary btn--lg">Открыть каталог</a>
+            <a href="#cta" class="btn btn--secondary btn--lg">Рассчитать стоимость</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <div class="hero__image-placeholder">
+            <div style="font-size:3rem;margin-bottom:8px;">&#127960;</div>
+            Фото фасада с декором
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BENEFITS ========== -->
+  <section class="benefits">
+    <div class="container">
+      <div class="benefits__grid">
+        <div class="benefit">
+          <div class="benefit__icon">&#128666;</div>
+          <div>
+            <div class="benefit__title">Доставка по России</div>
+            <div class="benefit__text">Бесплатная доставка от 50 000 &#8381;</div>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon">&#127981;</div>
+          <div>
+            <div class="benefit__title">Собственное производство</div>
+            <div class="benefit__text">Контроль качества на каждом этапе</div>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon">&#128209;</div>
+          <div>
+            <div class="benefit__title">3D-модели и чертежи</div>
+            <div class="benefit__text">DWG, PDF, STL для каждого изделия</div>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon">&#128100;</div>
+          <div>
+            <div class="benefit__title">Профессиональный монтаж</div>
+            <div class="benefit__text">Бригады в 23 городах России</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== POPULAR PRODUCTS ========== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Популярные товары</h2>
+      <div class="product-grid">
+        <!-- Card 1 -->
+        <div class="product-card animate-in">
+          <div class="product-card__image">
+            <span class="product-card__badge">Хит</span>
+            <div class="img-placeholder">Карниз КР-001</div>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__title">Карниз КР-001</div>
+            <div class="product-card__article">Арт. 100234</div>
+            <span class="product-card__material">Архимрамор</span>
+            <div class="product-card__footer">
+              <div class="product-card__price">890 &#8381; <small>/п.м.</small></div>
+              <button class="product-card__cart-btn" aria-label="В корзину">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="product-card animate-in">
+          <div class="product-card__image">
+            <div class="img-placeholder">Молдинг МЛ-045</div>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__title">Молдинг МЛ-045</div>
+            <div class="product-card__article">Арт. 100567</div>
+            <span class="product-card__material">Архикамень</span>
+            <div class="product-card__footer">
+              <div class="product-card__price">620 &#8381; <small>/п.м.</small></div>
+              <button class="product-card__cart-btn" aria-label="В корзину">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="product-card animate-in">
+          <div class="product-card__image">
+            <span class="product-card__badge">Новинка</span>
+            <div class="img-placeholder">Колонна КЛ-012</div>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__title">Колонна КЛ-012</div>
+            <div class="product-card__article">Арт. 100890</div>
+            <span class="product-card__material">Архимрамор</span>
+            <div class="product-card__footer">
+              <div class="product-card__price">12 400 &#8381; <small>/шт.</small></div>
+              <button class="product-card__cart-btn" aria-label="В корзину">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="product-card animate-in">
+          <div class="product-card__image">
+            <div class="img-placeholder">Наличник НЛ-033</div>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__title">Наличник НЛ-033</div>
+            <div class="product-card__article">Арт. 101122</div>
+            <span class="product-card__material">Пенополистирол</span>
+            <div class="product-card__footer">
+              <div class="product-card__price">340 &#8381; <small>/п.м.</small></div>
+              <button class="product-card__cart-btn" aria-label="В корзину">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="product-card animate-in">
+          <div class="product-card__image">
+            <div class="img-placeholder">Замковый камень ЗК-007</div>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__title">Замковый камень ЗК-007</div>
+            <div class="product-card__article">Арт. 101445</div>
+            <span class="product-card__material">Архикамень</span>
+            <div class="product-card__footer">
+              <div class="product-card__price">2 850 &#8381; <small>/шт.</small></div>
+              <button class="product-card__cart-btn" aria-label="В корзину">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="section section--bg">
+    <div class="container">
+      <h2 class="section-title">Услуги</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-card__icon">&#128208;</div>
+          <h3 class="service-card__title">3D-визуализация фасада</h3>
+          <p class="service-card__text">Покажем, как будет выглядеть декор на вашем доме до начала работ</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">&#128207;</div>
+          <h3 class="service-card__title">Проектирование</h3>
+          <p class="service-card__text">Разработка чертежей и спецификации элементов под ваш проект</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">&#128295;</div>
+          <h3 class="service-card__title">Монтаж «под ключ»</h3>
+          <p class="service-card__text">Профессиональная установка с гарантией 10 лет</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">&#128666;</div>
+          <h3 class="service-card__title">Доставка</h3>
+          <p class="service-card__text">Собственный автопарк, бережная транспортировка по России</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">&#127912;</div>
+          <h3 class="service-card__title">Покраска и патинирование</h3>
+          <p class="service-card__text">Финишная обработка элементов в любой цвет по RAL</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">&#128736;</div>
+          <h3 class="service-card__title">Индивидуальные изделия</h3>
+          <p class="service-card__text">Изготовление декора по вашим чертежам и эскизам</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Реализованные проекты</h2>
+      <div class="projects-grid">
+        <a href="#" class="project-card">
+          <div class="project-card__image">
+            <div class="img-placeholder">Фото проекта</div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Частный дом, Подмосковье</h3>
+            <p class="project-card__meta">Архимрамор &middot; 48 элементов &middot; 2025</p>
+          </div>
+        </a>
+        <a href="#" class="project-card">
+          <div class="project-card__image">
+            <div class="img-placeholder">Фото проекта</div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Гостиница «Усадьба», Сочи</h3>
+            <p class="project-card__meta">Архикамень &middot; 126 элементов &middot; 2025</p>
+          </div>
+        </a>
+        <a href="#" class="project-card">
+          <div class="project-card__image">
+            <div class="img-placeholder">Фото проекта</div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Таунхаус-комплекс, Казань</h3>
+            <p class="project-card__meta">Пенополистирол &middot; 312 элементов &middot; 2024</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BLOG ========== -->
+  <section class="section section--bg">
+    <div class="container">
+      <h2 class="section-title">Блог</h2>
+      <div class="blog-grid">
+        <a href="#" class="blog-card">
+          <div class="blog-card__image">
+            <span class="blog-card__category">Материалы</span>
+            <div class="img-placeholder">Фото статьи</div>
+          </div>
+          <div class="blog-card__body">
+            <h3 class="blog-card__title">Архимрамор vs архикамень: что выбрать для фасада</h3>
+            <p class="blog-card__excerpt">Разбираем ключевые отличия двух популярных материалов: прочность, вес, стоимость и долговечность.</p>
+            <div class="blog-card__meta">
+              <span>12 апреля 2026</span>
+              <span>6 мин чтения</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="blog-card">
+          <div class="blog-card__image">
+            <span class="blog-card__category">Монтаж</span>
+            <div class="img-placeholder">Фото статьи</div>
+          </div>
+          <div class="blog-card__body">
+            <h3 class="blog-card__title">5 ошибок при монтаже фасадного декора</h3>
+            <p class="blog-card__excerpt">Рассказываем, как избежать типичных проблем и продлить срок службы декоративных элементов.</p>
+            <div class="blog-card__meta">
+              <span>8 апреля 2026</span>
+              <span>4 мин чтения</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="blog-card">
+          <div class="blog-card__image">
+            <span class="blog-card__category">Дизайн</span>
+            <div class="img-placeholder">Фото статьи</div>
+          </div>
+          <div class="blog-card__body">
+            <h3 class="blog-card__title">Тренды фасадного декора 2026</h3>
+            <p class="blog-card__excerpt">Минимализм, крупные карнизы и возвращение классических ордеров — обзор актуальных решений.</p>
+            <div class="blog-card__meta">
+              <span>2 апреля 2026</span>
+              <span>8 мин чтения</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-section__inner">
+        <div>
+          <h2 class="cta-section__title">Рассчитать стоимость декора</h2>
+          <p class="cta-section__text">Оставьте заявку, и наш инженер подготовит расчёт с подбором элементов и стоимостью монтажа за 1 рабочий день.</p>
+        </div>
+        <form class="cta-form" action="#" method="post">
+          <div class="form-group">
+            <label for="ctaName">Ваше имя</label>
+            <input type="text" id="ctaName" placeholder="Иван Петров">
+          </div>
+          <div class="form-group">
+            <label for="ctaPhone">Телефон</label>
+            <input type="tel" id="ctaPhone" placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="form-group">
+            <label for="ctaComment">Комментарий</label>
+            <textarea id="ctaComment" rows="3" placeholder="Опишите проект или прикрепите ссылку на чертёж"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--full">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-col__title">Декор-КС</div>
+          <p class="footer-col__text">Производство и продажа архитектурного фасадного декора с 2008 года. Более 2 000 изделий в каталоге, доставка и монтаж по всей России.</p>
+          <p class="footer-col__text" style="color:rgba(255,255,255,0.4);font-size:0.75rem;">ООО «Декор-КС» &middot; ИНН 7701234567</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col__title">Каталог</div>
+          <ul>
+            <li><a href="catalog.html">Карнизы</a></li>
+            <li><a href="#">Молдинги</a></li>
+            <li><a href="#">Колонны</a></li>
+            <li><a href="#">Наличники</a></li>
+            <li><a href="#">Подоконники</a></li>
+            <li><a href="#">Балюстрады</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col__title">Компания</div>
+          <ul>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Проекты</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="#">Дилерам</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col__title">Контакты</div>
+          <p class="footer-col__text">
+            <strong style="color:#fff;">8 (800) 555-98-35</strong><br>
+            info@dekor-ks.ru<br><br>
+            г. Москва, ул. Промышленная, д. 12<br>
+            Пн-Пт: 9:00 — 18:00
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Декор-КС. Все права защищены.</span>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script>
+    // Mega-menu toggle
+    const catalogBtn = document.getElementById('catalogBtn');
+    const megaMenu = document.getElementById('megaMenu');
+    const megaOverlay = document.getElementById('megaOverlay');
+
+    catalogBtn.addEventListener('click', () => {
+      const isOpen = megaMenu.classList.contains('is-open');
+      megaMenu.classList.toggle('is-open', !isOpen);
+      megaOverlay.classList.toggle('is-open', !isOpen);
+      catalogBtn.classList.toggle('is-active', !isOpen);
+    });
+
+    megaOverlay.addEventListener('click', () => {
+      megaMenu.classList.remove('is-open');
+      megaOverlay.classList.remove('is-open');
+      catalogBtn.classList.remove('is-active');
+    });
+
+    // Mobile menu
+    const mobileToggle = document.querySelector('.mobile-toggle');
+    if (mobileToggle) {
+      mobileToggle.addEventListener('click', () => {
+        megaMenu.classList.toggle('is-open');
+        megaOverlay.classList.toggle('is-open');
+      });
+    }
+  </script>
+</body>
+</html>

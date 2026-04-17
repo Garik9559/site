@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карниз КР-001 — Декор-КС</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="container">
+        <button class="mobile-toggle" aria-label="Меню">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+        <a href="index.html" class="header-logo">
+          <div class="header-logo__icon">D</div>
+          <div class="header-logo__text">Декор-КС<small>Архитектурный декор</small></div>
+        </a>
+        <div class="header-search">
+          <input type="text" class="header-search__input" placeholder="Поиск по каталогу: карнизы, молдинги, колонны...">
+          <button class="header-search__btn" aria-label="Найти">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </button>
+        </div>
+        <div class="header-phone">
+          <a href="tel:88005559835" class="header-phone__number">8 (800) 555-98-35</a>
+          <span class="header-phone__label">Звонок бесплатный</span>
+        </div>
+        <div class="header-actions">
+          <a href="#" class="header-action-btn" aria-label="Избранное">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </a>
+          <a href="#" class="header-action-btn" aria-label="Корзина">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <span class="cart-badge">3</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <div class="container">
+        <button class="catalog-btn" id="catalogBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          Каталог
+        </button>
+        <div class="nav-links">
+          <a href="index.html">Главная</a>
+          <a href="catalog.html" class="active">Карнизы</a>
+          <a href="#">Молдинги</a>
+          <a href="#">Колонны</a>
+          <a href="#">Услуги</a>
+          <a href="#">Проекты</a>
+          <a href="blog.html">Блог</a>
+          <a href="#">Дилерам</a>
+          <a href="#">Контакты</a>
+        </div>
+      </div>
+    </nav>
+    <div class="mega-menu" id="megaMenu">
+      <div class="mega-menu__inner">
+        <div class="mega-menu__title">Все категории</div>
+        <div class="mega-menu__grid">
+          <a href="catalog.html" class="mega-menu__item"><span class="mega-menu__item-icon">&#9645;</span><span class="mega-menu__item-text">Карнизы</span></a>
+          <a href="#" class="mega-menu__item"><span class="mega-menu__item-icon">&#9644;</span><span class="mega-menu__item-text">Молдинги</span></a>
+          <a href="#" class="mega-menu__item"><span class="mega-menu__item-icon">&#9643;</span><span class="mega-menu__item-text">Наличники</span></a>
+          <a href="#" class="mega-menu__item"><span class="mega-menu__item-icon">&#9638;</span><span class="mega-menu__item-text">Подоконники</span></a>
+          <a href="#" class="mega-menu__item"><span class="mega-menu__item-icon">&#9673;</span><span class="mega-menu__item-text">Колонны</span></a>
+          <a href="#" class="mega-menu__item"><span class="mega-menu__item-icon">&#9681;</span><span class="mega-menu__item-text">Полуколонны</span></a>
+          <a href="#" class="mega-menu__item"><span class="mega-menu__item-icon">&#9650;</span><span class="mega-menu__item-text">Пилястры</span></a>
+          <a href="#" class="mega-menu__item"><span class="mega-menu__item-icon">&#9651;</span><span class="mega-menu__item-text">Капители</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="mega-overlay" id="megaOverlay"></div>
+  </header>
+
+  <!-- ========== BREADCRUMBS ========== -->
+  <div class="container">
+    <nav class="breadcrumbs">
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs__sep">/</li>
+        <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
+        <li class="breadcrumbs__sep">/</li>
+        <li class="breadcrumbs__item"><a href="catalog.html">Карнизы</a></li>
+        <li class="breadcrumbs__sep">/</li>
+        <li class="breadcrumbs__item">Карниз КР-001</li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- ========== PRODUCT DETAIL ========== -->
+  <section class="product-detail">
+    <div class="container">
+      <div class="product-detail__top">
+        <!-- LEFT: Gallery -->
+        <div class="product-gallery">
+          <div class="product-gallery__main">
+            <div class="product-gallery__main-placeholder">
+              <div style="font-size:4rem;margin-bottom:8px;">&#9645;</div>
+              Основное фото карниза КР-001
+            </div>
+          </div>
+          <div class="product-gallery__thumbs">
+            <div class="product-gallery__thumb is-active">Фото 1</div>
+            <div class="product-gallery__thumb">Фото 2</div>
+            <div class="product-gallery__thumb">Фото 3</div>
+            <div class="product-gallery__thumb">Фото 4</div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Info -->
+        <div class="product-info">
+          <h1 class="product-info__title">Карниз КР-001</h1>
+          <div class="product-info__article">Арт. 123456</div>
+
+          <!-- Rating -->
+          <div class="product-info__rating">
+            <div class="product-info__stars">
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+            </div>
+            <span class="product-info__rating-text">4.8 (24 отзыва)</span>
+          </div>
+
+          <!-- Material Tabs -->
+          <div class="material-tabs">
+            <div class="material-tabs__header">
+              <button class="material-tab is-active" data-material="archimramor">Архимрамор</button>
+              <button class="material-tab" data-material="archikamen">Архикамень</button>
+              <button class="material-tab" data-material="penopolistirol">Пенополистирол</button>
+            </div>
+
+            <!-- Archimramor (active) -->
+            <div class="material-tabs__content" id="materialContent">
+              <div class="material-stat material-stat--price">
+                <div class="material-stat__label">Цена</div>
+                <div class="material-stat__value" id="matPrice">890 &#8381; <small>/п.м.</small></div>
+              </div>
+              <div class="material-stat">
+                <div class="material-stat__label">Вес</div>
+                <div class="material-stat__value" id="matWeight">3.2 <small>кг/п.м.</small></div>
+              </div>
+              <div class="material-stat">
+                <div class="material-stat__label">На складе</div>
+                <div class="material-stat__value" id="matStock">245 <small>п.м.</small></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Specs mini-table -->
+          <div class="specs-mini">
+            <div class="specs-mini__row">
+              <span class="specs-mini__label">Длина элемента</span>
+              <span class="specs-mini__value">2 000 мм</span>
+            </div>
+            <div class="specs-mini__row">
+              <span class="specs-mini__label">Ширина (вынос)</span>
+              <span class="specs-mini__value">150 мм</span>
+            </div>
+            <div class="specs-mini__row">
+              <span class="specs-mini__label">Высота</span>
+              <span class="specs-mini__value">120 мм</span>
+            </div>
+            <div class="specs-mini__row">
+              <span class="specs-mini__label">Покрытие</span>
+              <span class="specs-mini__value">Грунт белый</span>
+            </div>
+          </div>
+
+          <!-- Downloads -->
+          <div class="download-row">
+            <a href="#" class="download-btn">
+              <div class="download-btn__icon">DWG</div>
+              <div class="download-btn__text">
+                Чертёж
+                <small>AutoCAD, 240 КБ</small>
+              </div>
+            </a>
+            <a href="#" class="download-btn">
+              <div class="download-btn__icon">PDF</div>
+              <div class="download-btn__text">
+                Спецификация
+                <small>PDF, 1.2 МБ</small>
+              </div>
+            </a>
+            <a href="#" class="download-btn">
+              <div class="download-btn__icon">STL</div>
+              <div class="download-btn__text">
+                3D-модель
+                <small>STL, 3.8 МБ</small>
+              </div>
+            </a>
+            <a href="#" class="download-btn">
+              <div class="download-btn__icon">&#128196;</div>
+              <div class="download-btn__text">
+                Инструкция монтажа
+                <small>PDF, 890 КБ</small>
+              </div>
+            </a>
+          </div>
+
+          <!-- Order -->
+          <div class="product-order">
+            <div class="quantity-input">
+              <button class="quantity-input__btn" id="qtyMinus">&minus;</button>
+              <input type="number" class="quantity-input__field" value="1" min="1" id="qtyField">
+              <button class="quantity-input__btn" id="qtyPlus">+</button>
+            </div>
+            <button class="btn btn--primary btn--lg">Добавить в заказ</button>
+          </div>
+          <p class="product-order__phone-hint">Или позвоните <a href="tel:88005559835">8 (800) 555-98-35</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== В ПРИМЕНЕНИИ ========== -->
+    <div class="application-gallery">
+      <div class="container">
+        <h2 class="section-title section-title--left">Этот элемент в применении</h2>
+        <div class="application-gallery__grid">
+          <div class="application-photo">
+            <div class="application-photo-placeholder">Фото проекта 1<br>Частный дом</div>
+          </div>
+          <div class="application-photo">
+            <div class="application-photo-placeholder">Фото проекта 2<br>Фасад коттеджа</div>
+          </div>
+          <div class="application-photo">
+            <div class="application-photo-placeholder">Фото проекта 3<br>Гостиница</div>
+          </div>
+          <div class="application-photo">
+            <div class="application-photo-placeholder">Фото проекта 4<br>Таунхаус</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== ВМЕСТЕ ПОКУПАЮТ ========== -->
+    <div class="also-buy">
+      <div class="container">
+        <h2 class="section-title section-title--left">Вместе с этим покупают</h2>
+        <div class="product-grid product-grid--4col">
+          <div class="product-card">
+            <div class="product-card__image">
+              <div class="img-placeholder">Молдинг МЛ-045</div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__title">Молдинг МЛ-045</div>
+              <div class="product-card__article">Арт. 100567</div>
+              <span class="product-card__material">Архимрамор</span>
+              <div class="product-card__footer">
+                <div class="product-card__price">620 &#8381; <small>/п.м.</small></div>
+                <button class="product-card__cart-btn" aria-label="В корзину">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__image">
+              <div class="img-placeholder">Наличник НЛ-033</div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__title">Наличник НЛ-033</div>
+              <div class="product-card__article">Арт. 101122</div>
+              <span class="product-card__material">Архимрамор</span>
+              <div class="product-card__footer">
+                <div class="product-card__price">540 &#8381; <small>/п.м.</small></div>
+                <button class="product-card__cart-btn" aria-label="В корзину">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__image">
+              <div class="img-placeholder">Замковый камень ЗК-007</div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__title">Замковый камень ЗК-007</div>
+              <div class="product-card__article">Арт. 101445</div>
+              <span class="product-card__material">Архикамень</span>
+              <div class="product-card__footer">
+                <div class="product-card__price">2 850 &#8381; <small>/шт.</small></div>
+                <button class="product-card__cart-btn" aria-label="В корзину">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__image">
+              <div class="img-placeholder">Подоконник ПД-012</div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__title">Подоконник ПД-012</div>
+              <div class="product-card__article">Арт. 102334</div>
+              <span class="product-card__material">Архимрамор</span>
+              <div class="product-card__footer">
+                <div class="product-card__price">1 120 &#8381; <small>/п.м.</small></div>
+                <button class="product-card__cart-btn" aria-label="В корзину">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== ОПИСАНИЕ И ХАРАКТЕРИСТИКИ ========== -->
+    <div class="full-description">
+      <div class="container">
+        <div class="full-description__content">
+          <h2 class="section-title section-title--left">Описание и характеристики</h2>
+          <p>Карниз КР-001 — классический профиль для оформления верхней части фасада здания. Элегантная форма с выраженным капельником обеспечивает не только декоративную функцию, но и эффективный отвод дождевой воды от стены.</p>
+          <p>Изделие производится из трёх материалов на выбор. Архимрамор обеспечивает максимальную прочность и долговечность (срок службы более 50 лет). Архикамень — оптимальный баланс цены и качества. Пенополистирол — лёгкое и экономичное решение для бюджетных проектов.</p>
+
+          <table class="specs-table">
+            <tr>
+              <th>Артикул</th>
+              <td>КР-001</td>
+            </tr>
+            <tr>
+              <th>Длина элемента</th>
+              <td>2 000 мм</td>
+            </tr>
+            <tr>
+              <th>Ширина (вынос)</th>
+              <td>150 мм</td>
+            </tr>
+            <tr>
+              <th>Высота профиля</th>
+              <td>120 мм</td>
+            </tr>
+            <tr>
+              <th>Материалы</th>
+              <td>Архимрамор, Архикамень, Пенополистирол</td>
+            </tr>
+            <tr>
+              <th>Покрытие</th>
+              <td>Грунт белый (под покраску)</td>
+            </tr>
+            <tr>
+              <th>Морозостойкость</th>
+              <td>F150 (150 циклов)</td>
+            </tr>
+            <tr>
+              <th>Водопоглощение</th>
+              <td>&#60; 3%</td>
+            </tr>
+            <tr>
+              <th>Класс огнестойкости</th>
+              <td>Г1 (слабогорючий)</td>
+            </tr>
+            <tr>
+              <th>Гарантия</th>
+              <td>10 лет</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-col__title">Декор-КС</div>
+          <p class="footer-col__text">Производство и продажа архитектурного фасадного декора с 2008 года.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col__title">Каталог</div>
+          <ul>
+            <li><a href="catalog.html">Карнизы</a></li>
+            <li><a href="#">Молдинги</a></li>
+            <li><a href="#">Колонны</a></li>
+            <li><a href="#">Наличники</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col__title">Компания</div>
+          <ul>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Проекты</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col__title">Контакты</div>
+          <p class="footer-col__text">
+            <strong style="color:#fff;">8 (800) 555-98-35</strong><br>
+            info@dekor-ks.ru<br><br>
+            г. Москва, ул. Промышленная, д. 12
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Декор-КС. Все права защищены.</span>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mega-menu
+    const catalogBtn = document.getElementById('catalogBtn');
+    const megaMenu = document.getElementById('megaMenu');
+    const megaOverlay = document.getElementById('megaOverlay');
+    catalogBtn.addEventListener('click', () => {
+      const isOpen = megaMenu.classList.contains('is-open');
+      megaMenu.classList.toggle('is-open', !isOpen);
+      megaOverlay.classList.toggle('is-open', !isOpen);
+      catalogBtn.classList.toggle('is-active', !isOpen);
+    });
+    megaOverlay.addEventListener('click', () => {
+      megaMenu.classList.remove('is-open');
+      megaOverlay.classList.remove('is-open');
+      catalogBtn.classList.remove('is-active');
+    });
+
+    // Material tabs
+    const materialData = {
+      archimramor: { price: '890 &#8381; <small>/п.м.</small>', weight: '3.2 <small>кг/п.м.</small>', stock: '245 <small>п.м.</small>' },
+      archikamen: { price: '1 240 &#8381; <small>/п.м.</small>', weight: '4.1 <small>кг/п.м.</small>', stock: '128 <small>п.м.</small>' },
+      penopolistirol: { price: '340 &#8381; <small>/п.м.</small>', weight: '0.4 <small>кг/п.м.</small>', stock: '560 <small>п.м.</small>' }
+    };
+
+    document.querySelectorAll('.material-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.material-tab').forEach(t => t.classList.remove('is-active'));
+        tab.classList.add('is-active');
+        const mat = tab.dataset.material;
+        const d = materialData[mat];
+        document.getElementById('matPrice').innerHTML = d.price;
+        document.getElementById('matWeight').innerHTML = d.weight;
+        document.getElementById('matStock').innerHTML = d.stock;
+      });
+    });
+
+    // Quantity
+    const qtyField = document.getElementById('qtyField');
+    document.getElementById('qtyMinus').addEventListener('click', () => {
+      const v = parseInt(qtyField.value) || 1;
+      qtyField.value = Math.max(1, v - 1);
+    });
+    document.getElementById('qtyPlus').addEventListener('click', () => {
+      const v = parseInt(qtyField.value) || 1;
+      qtyField.value = v + 1;
+    });
+
+    // Gallery thumbs
+    document.querySelectorAll('.product-gallery__thumb').forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        document.querySelectorAll('.product-gallery__thumb').forEach(t => t.classList.remove('is-active'));
+        thumb.classList.add('is-active');
+      });
+    });
+  </script>
+</body>
+</html>
